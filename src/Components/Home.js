@@ -1,9 +1,8 @@
 import React from 'react';
 import Lottie from  "lottie-react";
-import WomenCoder from "../LottieFiles/WomenCoder.json";
+import WomenCoder from "../LottieFiles/Female Avatar.json";
 import Typed from "./Typed.js";
-import Tilt from 'react-parallax-tilt';
-import Avatar from '../images/Avatar.png';
+import Avatar from "../LottieFiles/CodingWithCoffile.json";
 import {CiCoffeeCup} from "react-icons/ci";
 
 const Home = () => {
@@ -37,9 +36,11 @@ const Home = () => {
             <CiCoffeeCup style={{ transform: "scale(1.5) rotate(15deg)" }} />
           </p>
         </div>
-        <Tilt>
-          <img className='Avatar' src={Avatar} alt="" />
-        </Tilt>
+        <Lottie 
+          className="Avatar" 
+          animationData={Avatar} 
+          loop={true} 
+        />
       </div>
     </div>
   )

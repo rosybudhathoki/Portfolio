@@ -7,10 +7,8 @@ import About from "./Components/About";
 import Resume from "./Components/Resume";
 import Project from "./Components/Projects";
 import MoveToTop from "./Components/MoveToTop";
-import Lottie from  "lottie-react";
-import nightsky from "./LottieFiles/night-sky.json";
+import Calm from './images/cloudsDark.jpg';
 import HashLoader from "react-spinners/HashLoader";
-
 
 function App() {
   const[Loading,SetLoading]=useState(true);
@@ -28,7 +26,7 @@ function App() {
       {Loading ? (
       <div className="loader"> 
         <HashLoader
-          color={'#9067C6'}
+          color={'#241d49ff'}
           loading={true}
           size={100}
           aria-label="Loading Spinner"
@@ -37,10 +35,8 @@ function App() {
       </div>
       ):(
       <div>
-      
-      <Lottie className="bg" animationData={nightsky} loop={true} />  
-      <Lottie className="bgtwo" animationData={nightsky} loop={true} />   
-      <Lottie className="bgtemp" animationData={nightsky} loop={true} /> 
+
+      <img className="bg" src={Calm} alt="Pink Clouds" />
 
       <Nav/>
       <MoveToTop/>
