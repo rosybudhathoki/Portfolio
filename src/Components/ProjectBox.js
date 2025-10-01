@@ -5,21 +5,21 @@ import {CgFileDocument} from "react-icons/cg";
 
 const  ProjectBox = ({projectPhoto, projectName}) => {
   const desc = {
-    Project1Desc : "Some description",
-    Project1Github : "github",
-    Project1Website : "",
+    ScansagaDesc : "This is a firebase-powered Android app for event management with QR code check-ins, real-time attendance tracking, and multimedia support.",
+    ScansagaGithub : "https://github.com/rosybudhathoki/ScanSaga",
+    ScansagaWebsite : "https://github.com/rosybudhathoki/ScanSaga",
 
-    Project2Desc : "Some description.",
-    Project2Github : "github",
-    Project2Website : "",
+    TasklyDesc : "This project is a web-based to-do list application with cute aesthetics that helps you stay organized. User can add, delete, and modify tasks.",
+    TasklyGithub : "https://github.com/rosybudhathoki/Taskly",
+    TasklyWebsite : "https://rosybudhathoki.github.io/Taskly/",
 
-    Project3Desc:"Some description",
-    Project3Github:"github",
-    Project3Website:"",
-    
-    Project4Desc:"Some description",
-    Project4Github:"github",
-    Project4Website:"",
+    SudokuSolverDesc: "A Python-based Sudoku solver that can solve any Suduko under a second. Testsed on 95 complex suduko problems of all difficulty levels.",
+    SudokuSolverGithub:"https://github.com/rosybudhathoki/SudukoSolver",
+    SudokuSolverWebsite:"https://github.com/rosybudhathoki/SudukoSolver/blob/main/Output.txt",
+
+    DatabaseMeasureDesc:"This project is a Python-based database benchmarking tool that measures MongoDB performance by analyzing query efficiency across databases of different sizes, with and without indexing.",
+    DatabaseMeasureGithub:"https://github.com/rosybudhathoki/DatabasePerformanceMeasure",
+    DatabaseMeasureWebsite:"https://github.com/rosybudhathoki/DatabasePerformanceMeasure",
   }
 
   let show ='';
