@@ -1,6 +1,7 @@
 {
   "name": "portfolio",
   "version": "1.0.0",
+  "homepage": "https://rosybudhathoki.github.io",
   "description": "Personal Portfolio",
   "main": "index.js",
   "dependencies": {
