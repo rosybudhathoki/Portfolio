@@ -5,15 +5,15 @@ import {CgFileDocument} from "react-icons/cg";
 
 const  ProjectBox = ({projectPhoto, projectName}) => {
   const desc = {
-    ScansagaDesc : "This is a firebase-powered Android app for event management with QR code check-ins, real-time attendance tracking, and multimedia support.",
+    ScansagaDesc : "This is a firebase-powered Android app for event management with QR code check-ins, real-time attendance tracking, multimedia support, and geolocation sharing.",
     ScansagaGithub : "https://github.com/rosybudhathoki/ScanSaga",
     ScansagaWebsite : "https://github.com/rosybudhathoki/ScanSaga",
 
-    TasklyDesc : "This project is a web-based to-do list application with cute aesthetics that helps you stay organized. User can add, delete, and modify tasks.",
+    TasklyDesc : "This project is a web-based to-do list application with cute aesthetics that helps you stay organized. User can add, delete, and modify tasks. It also has a stopwatch, and a timer feature.",
     TasklyGithub : "https://github.com/rosybudhathoki/Taskly",
     TasklyWebsite : "https://rosybudhathoki.github.io/Taskly/",
 
-    SudokuSolverDesc: "A Python-based Sudoku solver that can solve any Suduko under a second. Testsed on 95 complex suduko problems of all difficulty levels.",
+    SudokuSolverDesc: "A Python-based Sudoku solver that can solve any Suduko under a second. Testsed on 95 complex suduko problems using two diffent algorithms to evaluate which one is efficient.",
     SudokuSolverGithub:"https://github.com/rosybudhathoki/SudukoSolver",
     SudokuSolverWebsite:"https://github.com/rosybudhathoki/SudukoSolver/blob/main/Output.txt",
 
@@ -34,7 +34,16 @@ const  ProjectBox = ({projectPhoto, projectName}) => {
             <br />
             <h3>{projectName}</h3>
             <br />
-            {desc[projectName + 'Desc']}
+              <span style=
+              {{
+                fontSize: '20px',       // Bigger text
+                fontWeight: '500',      // Medium-bold for clarity
+                lineHeight: '1.5',      // Better spacing between lines
+                fontFamily: 'Arial, sans-serif',  // Clean, readable font
+                color: '#ffffffff',               // Text color
+              }}>
+                {desc[projectName + 'Desc']}
+              </span>
             <br />
 
             <a style={{display:show}} href={desc[projectName + 'Github']} target='_blank'>

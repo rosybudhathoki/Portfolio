@@ -11,45 +11,42 @@ import Calm from './images/cloudsDark.jpg';
 import HashLoader from "react-spinners/HashLoader";
 
 function App() {
-  const[Loading,SetLoading]=useState(true);
+  const [Loading, SetLoading] = useState(true);
 
-  useEffect(()=>{
-    SetLoading(true)
+  useEffect(() => {
+    SetLoading(true);
+    setTimeout(() => {
+      SetLoading(false);
+    }, 1900);
+  }, []);
 
-    setTimeout(()=>{
-    SetLoading(false)}
-    ,1900)
-  },[])  
-  
   return (
     <>
       {Loading ? (
-      <div className="loader"> 
-        <HashLoader
-          color={'#241d49ff'}
-          loading={true}
-          size={100}
-          aria-label="Loading Spinner"
-          data-testid="loader"
-        />
-      </div>
-      ):(
-      <div>
+        <div className="loader"> 
+          <HashLoader
+            color={'#241d49ff'}
+            loading={true}
+            size={100}
+            aria-label="Loading Spinner"
+            data-testid="loader"
+          />
+        </div>
+      ) : (
+        <div>
+          <img className="bg" src={Calm} alt="Pink Clouds" />
+          <Nav/>
+          <MoveToTop/>
 
-      <img className="bg" src={Calm} alt="Pink Clouds" />
-
-      <Nav/>
-      <MoveToTop/>
-
-      <Routes>
-        <Route path="/" element={<Home/>} />
-        <Route path="/About" element={<About/>}/>
-        <Route path="/Project" element={<Project/>}/>
-        <Route path="/Resume" element={<Resume/>}/>
-      </Routes>
-      
-      <Footer/>
-      </div>
+          <Routes>
+            <Route path="/" element={<Home/>} />
+            <Route path="/About" element={<About/>}/>
+            <Route path="/Project" element={<Project/>}/>
+            <Route path="/Resume" element={<Resume/>}/>
+          </Routes>
+          
+          <Footer/>
+        </div>
       )}  
     </>
   );

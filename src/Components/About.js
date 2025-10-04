@@ -10,10 +10,17 @@ const About = () => {
         <div className='AboutText'>
           <h1 className='AboutTextHeading' >Get to <b>know</b> me!</h1>
           <p>
-            Hi, my name is <b>Rosy Budhathoki</b>. I'm an aspiring <b>Software Developer</b>, and a final year student of <b>Bachelor in Science - Computer Science Specilization</b> at <b>the University of Alberta</b>. <br/><br/>
-            I'm currently working as a <b>Software Developer Intern</b> at Pason Systems in Calgary.
-            I am <b>open</b> to new experiences where I can contribute, and grow as a developer.<br/> <br/>
-            Apart from coding I really enjoy going on scenic hikes, biking, trivia, and music. 
+            <span style=
+              {{
+                fontSize: '25px',       // Bigger text
+                fontWeight: '500',      // Medium-bold for clarity
+                lineHeight: '1.5',      // Better spacing between lines
+                color: '#ffffffff',               // Text color
+              }}>
+              Hi, my name is <b>Rosy Budhathoki</b>. I'm an aspiring <b>Software Developer</b> and a final-year student pursuing a <b>Bachelor of Science in Computer Science – Specialization</b> at <b>the University of Alberta</b>.<br/><br/>
+              I recently completed a 16-month internship as a <b>Software Developer Intern</b> at Pason Systems in Calgary. This role was extended for an additional 4 months for, and I am now working as a <b>Software Developer in Test</b> until the end of 2025. I am <b>open</b> to new experiences where I can contribute and continue growing as a developer.<br/><br/>
+              Outside of coding, I enjoy scenic hikes, biking, trivia, and music.
+              </span>
           </p>
         </div>
 
