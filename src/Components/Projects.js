@@ -2,7 +2,7 @@ import React from 'react';
 import ProjectBox from './ProjectBox';
 import QR from '../images/QR.png';
 import SQL from '../images/Database.jpg';
-import toDO from '../images/todo.webp';
+import toDO from '../images/todo.jpg';
 import sudoku from '../images/Sudoku.jpg';
 
 const Projects = () => {
