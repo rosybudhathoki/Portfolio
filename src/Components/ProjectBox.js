@@ -24,7 +24,7 @@ const  ProjectBox = ({projectPhoto, projectName}) => {
     DatabaseMeasureDesc:"This project is a Python-based database benchmarking tool that measures MongoDB performance by analyzing query efficiency across databases of different sizes, with and without indexing.",
     DatabaseMeasureLanguages : "Python, MongoDb",
     DatabaseMeasureGithub:"https://github.com/rosybudhathoki/DatabasePerformanceMeasure",
-    DatabaseMeasureWebsite:"https://github.com/rosybudhathoki/DatabasePerformanceMeasure",
+    DatabaseMeasureWebsite:"https://github.com/rosybudhathoki/DatabasePerformanceMeasure/blob/main/README.txt",
   }
 
   let show ='';
