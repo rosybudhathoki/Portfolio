@@ -9,7 +9,7 @@ const  ProjectBox = ({projectPhoto, projectName}) => {
     ScansagaLanguages : "Java, XML, Firebase, AndrioStudio, JUnit",
     ScansagaGithub : "https://github.com/rosybudhathoki/ScanSaga",
     ScansagaGithub : "https://github.com/rosybudhathoki/ScanSaga",
-    ScansagaWebsite : "https://github.com/rosybudhathoki/ScanSaga",
+    ScansagaWebsite : "https://github.com/rosybudhathoki/ScanSaga/blob/main/Important%20files/MockUp_final.png",
 
     TasklyDesc : "This project is a web-based to-do list application with cute aesthetics that helps you stay organized. User can add, delete, modify and flter tasks. It also has a stopwatch, and a timer feature.",
     TasklyLanguages : "HTML, CSS, JavaScript",
