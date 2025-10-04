@@ -15,7 +15,7 @@ const  ProjectBox = ({projectPhoto, projectName}) => {
 
     SudokuSolverDesc: "A Python-based Sudoku solver that can solve any Suduko under a second. Testsed on 95 complex suduko problems using two diffent algorithms to evaluate which one is efficient.",
     SudokuSolverGithub:"https://github.com/rosybudhathoki/SudukoSolver",
-    SudokuSolverWebsite:"https://github.com/rosybudhathoki/SudukoSolver/blob/main/Output.txt",
+    SudokuSolverWebsite:"https://github.com/rosybudhathoki/SudokuSolver/blob/main/finalResult.md",
 
     DatabaseMeasureDesc:"This project is a Python-based database benchmarking tool that measures MongoDB performance by analyzing query efficiency across databases of different sizes, with and without indexing.",
     DatabaseMeasureGithub:"https://github.com/rosybudhathoki/DatabasePerformanceMeasure",
