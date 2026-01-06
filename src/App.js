@@ -7,7 +7,7 @@ import About from "./Components/About";
 import Resume from "./Components/Resume";
 import Project from "./Components/Projects";
 import MoveToTop from "./Components/MoveToTop";
-import Calm from './images/Da.jpg';
+import Calm from './images/DarkClouds.jpg';
 import HashLoader from "react-spinners/HashLoader";
 
 function App() {
@@ -40,9 +40,9 @@ function App() {
 
           <Routes>
             <Route path="/" element={<Home/>} />
-            <Route path="/about" element={<About/>}/>
-            <Route path="/project" element={<Project/>}/>
-            <Route path="/resume" element={<Resume/>}/>
+            <Route path="/About" element={<About/>}/>
+            <Route path="/Project" element={<Project/>}/>
+            <Route path="/Resume" element={<Resume/>}/>
           </Routes>
           
           <Footer/>
