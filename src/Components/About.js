@@ -2,6 +2,7 @@ import Skills from './Skills.js';
 import Tilt from 'react-parallax-tilt';
 import Lottie from "lottie-react"
 import Coder from '../LottieFiles/WomenCoder.json';
+import ArrowDown from '../LottieFiles/ArrowDown.json';
 
 const About = () => {
   return (
@@ -30,16 +31,24 @@ const About = () => {
           </p>
         </div>
 
-        <div>
+        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '10px' }}>
+          {/* Coder animation */}
           <Tilt>
-              <Lottie 
-              className="illustration" 
+            <Lottie 
               animationData={Coder} 
               loop={true} 
+              style={{ width: '400px', height: 'auto' }} 
+            />
+          </Tilt>
+          {/* Thin arrow below */}
+          <Tilt>
+            <Lottie 
+              animationData={ArrowDown} 
+              loop={true} 
+              style={{ width: '50px', height: 'auto' }}
             />
           </Tilt>
         </div>
-
       </div>
       
       <h1 className='SkillsHeading'>Professional Skills</h1>

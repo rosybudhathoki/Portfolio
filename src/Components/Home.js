@@ -3,6 +3,7 @@ import Lottie from  "lottie-react";
 import WomenCoder from "../LottieFiles/Female Avatar.json";
 import Typed from "./Typed.js";
 import Avatar from "../LottieFiles/CodingWithCoffile.json";
+import ArrowDown from '../LottieFiles/ArrowDown.json';
 import {CiCoffeeCup} from "react-icons/ci";
 
 const Home = () => {
@@ -16,12 +17,21 @@ const Home = () => {
           <Typed/>   
         </div>
 
-        <Lottie 
-          className="illustration" 
-          animationData={WomenCoder} 
-          loop={true} 
-        />
-        
+        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '10px' }}>
+          {/* Women Coder animation */}
+            <Lottie 
+              animationData={WomenCoder} 
+              loop={true} 
+              style={{ width: '400px', height: 'auto' }} 
+            />
+
+          {/* Thin arrow below */}
+            <Lottie 
+              animationData={ArrowDown} 
+              loop={true} 
+              style={{ width: '50px', height: 'auto' }} 
+            />
+        </div>
       </div>
 
       <div className='AboutPage'>
@@ -45,6 +55,7 @@ const Home = () => {
             <CiCoffeeCup style={{ transform: "scale(1.5) rotate(15deg)" }} />
             </p>
           </p>
+          
         </div>
         <Lottie 
           className="Avatar" 
