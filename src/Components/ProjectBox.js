@@ -43,8 +43,8 @@ const  ProjectBox = ({projectPhoto, projectName}) => {
           alt="Project display" 
           style={{
             width: '100%',
-            height: '350px',        // same height for all images
-            objectFit: 'cover',     // preserves aspect ratio
+            height: '350px',       
+            objectFit: 'cover',    
             borderRadius: '12px',
             marginBottom: '1rem'
           }}

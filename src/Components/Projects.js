@@ -10,9 +10,7 @@ const Projects = () => {
   return (
     <div>
       <h1 className='projectHeading'>
-        <p>
           <h3> My <b>Projects </b></h3>
-        </p>
       </h1>
       <div className='project'>
         <ProjectBox projectPhoto={memoAI} projectName="MemoAI" />
