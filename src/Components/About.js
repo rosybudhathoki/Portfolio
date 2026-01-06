@@ -8,18 +8,24 @@ const About = () => {
     <>
       <div className='AboutPage'>
         <div className='AboutText'>
-          <h1 className='AboutTextHeading' >Get to <b>know</b> me!</h1>
+          <h1 className='AboutTextHeading' > <h3> Get to <b>know me! </b></h3></h1>
           <p>
             <span style=
               {{
-                fontSize: '25px',       // Bigger text
-                fontWeight: '500',      // Medium-bold for clarity
-                lineHeight: '1.5',      // Better spacing between lines
-                color: '#ffffffff',               // Text color
+                fontSize: '25px',      
+                fontWeight: '500',      
+                lineHeight: '1.5',     
+                color: '#ffffffff',           
               }}>
-              Hi, my name is <b>Rosy Budhathoki</b>. I'm an aspiring <b>Software Developer</b> and a final-year student pursuing a <b>Bachelor of Science in Computer Science – Specialization</b> at <b>the University of Alberta</b>.<br/><br/>
-              I recently completed a 16-month internship as a <b>Software Developer Intern</b> at Pason Systems in Calgary. This role was extended for an additional 4 months for, and I am now working as a <b>Software Developer in Test</b> until the end of 2025. I am <b>open</b> to new experiences where I can contribute and continue growing as a developer.<br/><br/>
-              Outside of coding, I enjoy scenic hikes, biking, trivia, and music.
+                <p>
+                  Hi, my name is <b>Rosy Budhathoki</b>. I'm an aspiring <b>Software Developer</b> and a final-year student pursuing a <b>Bachelor of Science in Computer Science – Specialization </b> with primary focus on Machine Learning and AI at <b>the University of Alberta</b>.<br/><br/>
+
+                  I recently completed a 20-month work term as a <b>Software Developer Intern</b> at Pason Systems in Calgary. I am <b>open</b> to new experiences where I can contribute and continue growing as a developer.<br/><br/>
+
+                  I enjoy working on <b>complex problems</b> and thrive in collaborative environments. I am a <b>team player</b>, excellent communicator, and pay close attention to <b>details</b>.<br/><br/>
+
+                  Besides coding, I also enjoy scenic hikes, biking, trivia, and music.
+                </p>
               </span>
           </p>
         </div>

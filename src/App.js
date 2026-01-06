@@ -7,7 +7,7 @@ import About from "./Components/About";
 import Resume from "./Components/Resume";
 import Project from "./Components/Projects";
 import MoveToTop from "./Components/MoveToTop";
-import Calm from './images/cloudsDark.jpg';
+import Calm from './images/DarkClouds.jpg';
 import HashLoader from "react-spinners/HashLoader";
 
 function App() {

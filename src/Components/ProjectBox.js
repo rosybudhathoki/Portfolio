@@ -5,9 +5,13 @@ import {CgFileDocument} from "react-icons/cg";
 
 const  ProjectBox = ({projectPhoto, projectName}) => {
   const desc = {
+    MemoAIDesc : "A full-stack AI-powered note-taking web application featuring a rich-text editor with AI autocomplete, real-time autosave, secure authentication, and cloud-backed persistence for seamless writing and productivity.",
+    MemoAILanguages : "OpenAI API, TypeScript, JavaScript, React, Next.js, Tailwind CSS, TipTap, Clerk Authentication, TanStack Query",
+    MemoAIGithub : "https://github.com/rosybudhathoki/memoAI",
+    MemoAIWebsite : "https://memosai.netlify.app/",
+
     ScansagaDesc : "This is a firebase-powered Android app for event management with QR code check-ins, real-time attendance tracking, multimedia support, and geolocation sharing.",
     ScansagaLanguages : "Java, XML, Firebase, AndrioStudio, JUnit",
-    ScansagaGithub : "https://github.com/rosybudhathoki/ScanSaga",
     ScansagaGithub : "https://github.com/rosybudhathoki/ScanSaga",
     ScansagaWebsite : "https://github.com/rosybudhathoki/ScanSaga/blob/main/Important%20files/MockUp_final.png",
 
@@ -34,10 +38,20 @@ const  ProjectBox = ({projectPhoto, projectName}) => {
     
   return (
     <div className='projectBox'> 
-        <img className='projectPhoto' src={projectPhoto} alt="Project display" /> 
+        <img 
+          src={projectPhoto} 
+          alt="Project display" 
+          style={{
+            width: '100%',
+            height: '350px',        // same height for all images
+            objectFit: 'cover',     // preserves aspect ratio
+            borderRadius: '12px',
+            marginBottom: '1rem'
+          }}
+        />
         <div>
             <br />
-            <h3>{projectName}</h3>
+            <h2 className='semibold'>{projectName}</h2>
             <br />
               <span style=
               {{
@@ -68,14 +82,15 @@ const  ProjectBox = ({projectPhoto, projectName}) => {
               </span>
               <br />
 
-            <a style={{display:show}} href={desc[projectName + 'Github']} target='_blank'>
-              <button className='projectbtn'><FaGithub/> Github</button>
-            </a>
+            <div className="projectButtons">
+              <a style={{display:show}} href={desc[projectName + 'Github']} target='_blank'>
+                <button className='projectbtn'><FaGithub/> Github</button>
+              </a>
 
-            <a href={desc[projectName + 'Website']} target='_blank'>
-              <button className='projectbtn'><CgFileDocument/> Demo</button>
-            </a>
-
+              <a href={desc[projectName + 'Website']} target='_blank'>
+                <button className='projectbtn'><CgFileDocument/> Demo</button>
+              </a>
+          </div>
         </div>
     </div>
   )

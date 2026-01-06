@@ -26,7 +26,7 @@ const Home = () => {
 
       <div className='AboutPage'>
         <div className='AboutText'>
-          <h1 className='AboutTextHeading'>Brief <b>introduction</b></h1>
+          <h1 className='AboutTextHeading'><h3> Brief <b>introduction </b></h3></h1>
           <p>
             <span style=
               {{
@@ -35,13 +35,15 @@ const Home = () => {
                 lineHeight: '1.5',      // Better spacing between lines
                 color: '#ffffffff',               // Text color
               }}>
-              I’m an enthusiastic learner who loves exploring new concepts and tackling challenges. 
+              I’m an enthusiastic learner who loves exploring new concepts and tackling challenges.
               I’m eager to grow my skills in software development and contribute to exciting projects. <br /><br />
               With strong communication skills and a collaborative mindset, I enjoy working in teams and bringing ideas to life. <br /><br />
               </span>
           
-            Fun fact: I'm a big <b>coffee</b> enthusiast.{" "}
+            <p>
+              <strong>Fun fact:</strong> I'm a big <b> coffee</b> enthusiast. 
             <CiCoffeeCup style={{ transform: "scale(1.5) rotate(15deg)" }} />
+            </p>
           </p>
         </div>
         <Lottie 

@@ -4,12 +4,18 @@ import QR from '../images/QR.png';
 import SQL from '../images/Database.jpg';
 import toDO from '../images/todo.jpg';
 import sudoku from '../images/Sudoku.jpg';
+import memoAI from '../images/MemoAI.avif';
 
 const Projects = () => {
   return (
     <div>
-      <h1 className='projectHeading'>My <b>Projects</b></h1>
+      <h1 className='projectHeading'>
+        <p>
+          <h3> My <b>Projects </b></h3>
+        </p>
+      </h1>
       <div className='project'>
+        <ProjectBox projectPhoto={memoAI} projectName="MemoAI" />
         <ProjectBox projectPhoto={QR} projectName="Scansaga" />
         <ProjectBox projectPhoto={toDO} projectName="Taskly" />
         <ProjectBox projectPhoto={sudoku} projectName="SudokuSolver" />
