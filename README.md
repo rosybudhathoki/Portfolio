@@ -2,6 +2,10 @@
 <br/>
 
 ## About 
+
+<p>Portfolio URL:</p> 
+- https://rosybudhatho.netlify.app/
+
 <p>This project is my personal portfolio that showcases my skills, my personal projects, and my resume.</p>
 <p> Technologies used:</p>   
 <ul>
